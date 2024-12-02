@@ -1,0 +1,209 @@
+/* Asosiy stillar */
+body {
+    background-color: #f8f9fa;
+}
+
+/* Statistika kartochkalari */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+/* Status indikatorlari */
+.status-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.status-online {
+    background-color: #28a745;
+}
+
+.status-offline {
+    background-color: #dc3545;
+}
+
+.status-warning {
+    background-color: #ffc107;
+}
+
+/* Jadval stillar */
+.table th {
+    border-top: none;
+    font-weight: 600;
+    color: #6c757d;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+/* Progress bar */
+.progress {
+    height: 6px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 3px;
+}
+
+.progress-bar {
+    background-color: #0d6efd;
+    transition: width 0.3s ease;
+}
+
+/* Animatsiyalar */
+.updated {
+    animation: highlight 1s ease-out;
+}
+
+@keyframes highlight {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Toast xabarlari */
+.toast-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1050;
+}
+
+.toast {
+    background-color: rgba(255,255,255,0.95);
+    backdrop-filter: blur(10px);
+}
+
+/* Modal oyna */
+.modal-content {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Form elementlari */
+.form-control:focus,
+.form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13,110,253,0.25);
+}
+
+/* Tugmalar */
+.btn {
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+}
+
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+}
+
+/* Loading indikatori */
+.spinner-border-sm {
+    width: 1rem;
+    height: 1rem;
+    border-width: 0.15em;
+}
+
+
+/* Ogohlantirishlar uchun stillar */
+.list-group-item {
+    transition: background-color 0.3s;
+}
+
+.list-group-item:hover {
+    background-color: rgba(0,0,0,0.01);
+}
+
+.list-group-item.bg-light {
+    opacity: 0.8;
+}
+
+#unread-badge {
+    transition: all 0.3s;
+}
+
+.warning-card-enter {
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Tezlik ko'rsatkichlari uchun stillar */
+.speed-info {
+    font-size: 0.9em;
+    padding: 8px;
+}
+
+.download-speed,
+.upload-speed {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.progress {
+    height: 6px;
+    background-color: #eee;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.download-speed .progress-bar {
+    background-color: #28a745;
+    transition: width 0.3s ease;
+}
+
+.upload-speed .progress-bar {
+    background-color: #17a2b8;
+    transition: width 0.3s ease;
+}
+
+.ping {
+    color: #6c757d;
+    margin-top: 4px;
+    font-size: 0.8em;
+}
+
+/* Toast xabarlari uchun stillar */
+.toast-container {
+    z-index: 1050;
+}
+
+.toast {
+    opacity: 0.9;
+}
+
+/* Animatsiyalar */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.speed-update {
+    animation: pulse 0.3s ease;
+}
+
+

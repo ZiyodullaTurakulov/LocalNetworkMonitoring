@@ -1,0 +1,185 @@
+/* Asosiy stillar */
+body {
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+/* Navbar stillar */
+.navbar-brand {
+    font-weight: 600;
+}
+
+/* Kartochka stillar */
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-title {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Jadval stillar */
+.table th {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.progress {
+    background-color: #e9ecef;
+    border-radius: 10px;
+    height: 6px;
+}
+
+.progress-bar {
+    background-color: #0d6efd;
+    border-radius: 10px;
+}
+
+/* Badge stillar */
+.badge {
+    padding: 0.5em 0.8em;
+    border-radius: 6px;
+}
+
+/* Joylashuv ma'lumotlari stillar */
+.location-info {
+    font-size: 0.9rem;
+}
+
+.location-info i {
+    margin-right: 5px;
+}
+
+.location-info small {
+    display: block;
+    margin-left: 20px;
+    color: #6c757d;
+}
+
+/* Toast stillar */
+.toast-container {
+    z-index: 1050;
+}
+
+.toast {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 10px;
+    min-width: 300px;
+}
+
+.toast-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    background-color: transparent;
+}
+
+.toast.showing,
+.toast.hide {
+    opacity: 0;
+}
+
+.toast.show {
+    opacity: 1;
+    transition: opacity 0.15s linear;
+}
+
+/* Yangilanish animatsiyasi */
+.updated {
+    animation: highlight 1s ease-out;
+}
+
+@keyframes highlight {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Progress bar */
+.progress {
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 3px;
+}
+
+.progress-bar {
+    background-color: #0d6efd;
+    transition: width 0.3s ease;
+}
+
+/* Status badges */
+.badge {
+    padding: 0.5em 0.8em;
+    font-weight: 500;
+}
+
+/* Tooltip */
+.tooltip {
+    font-size: 0.875rem;
+}
+
+/* Toast container */
+.toast-container {
+    z-index: 1050;
+}
+
+/* Animatsiyalar */
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.toast.showing {
+    animation: slideIn 0.3s ease-out;
+}
+
+/* Responsive stillar */
+@media (max-width: 768px) {
+    .card-title {
+        font-size: 0.8rem;
+    }
+    
+    .table {
+        font-size: 0.9rem;
+    }
+    
+    .btn-group .btn {
+        padding: 0.2rem 0.4rem;
+    }
+    
+    .toast-container {
+        padding: 0.5rem;
+    }
+    
+    .toast {
+        min-width: auto;
+        width: 100%;
+    }
+}
