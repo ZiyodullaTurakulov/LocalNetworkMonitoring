@@ -63,4 +63,4 @@ Loyiha [ZiyoTurakulov(21yo20.uz)] tomonidan ishlab chiqilgan
 
 ## Yordam va qo'llab-quvvatlash
 
-Savollar va takliflar uchun [issues](https://github.com/ZiyodullaTurakulov/tarmoq-monitoring/issues) bo'limiga murojaat qiling.
+Savollar va takliflar uchun (https://t.me/ZiyoTurakulov) bo'limiga murojaat qiling.
